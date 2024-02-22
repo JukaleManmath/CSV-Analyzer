@@ -4,7 +4,7 @@ import io
 from lyzr import DataAnalyzr
 
 def main():
-    st.title("Disease Predictor using lyzr AI")
+    st.title("CSV Analyser using lyzr AI")
 
     # Create a file uploader widget
     uploaded_file = st.file_uploader("Upload CSV file", type=["csv"])
@@ -27,7 +27,7 @@ def main():
         # Allow user to input analysis query
         user_input = st.text_input("Enter your analysis query:")
 
-        if st.button("Predict Disease"):
+        if st.button("Predict"):
             # Filter DataFrame based on selected columns
             selected_df = df[selected_columns]
 
